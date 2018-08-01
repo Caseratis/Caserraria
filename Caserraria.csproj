@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8298EAB6-0586-4BDA-9483-83624B66B13A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Caserraria</RootNamespace>
+    <AssemblyName>Caserraria</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Caserraria.cs" />
+    <Compile Include="Items\Accessories\AncientHeroMedallion.cs" />
+    <Compile Include="Items\Accessories\GoldenKnight.cs" />
+    <Compile Include="Items\Accessories\GraniteCore.cs" />
+    <Compile Include="Items\Accessories\GraniteMedallion.cs" />
+    <Compile Include="Items\Accessories\HeavyBoots.cs" />
+    <Compile Include="Items\Accessories\WoodCharm.cs" />
+    <Compile Include="Items\ForestTotem.cs" />
+    <Compile Include="Items\ForestTreasureBag.cs" />
+    <Compile Include="Items\Healing\FlowerTea.cs" />
+    <Compile Include="Items\Healing\GrilledMushroom.cs" />
+    <Compile Include="Items\Healing\LunarFood.cs" />
+    <Compile Include="Items\Healing\MeldCereal.cs" />
+    <Compile Include="Items\Healing\MiracleBrew.cs" />
+    <Compile Include="Items\Healing\PurifiedHoney.cs" />
+    <Compile Include="Items\Healing\PurifiedWater.cs" />
+    <Compile Include="Items\Healing\SearedHoneyfin.cs" />
+    <Compile Include="Items\Healing\StalwartPotion.cs" />
+    <Compile Include="Items\Materials\Unknownparts.cs" />
+    <Compile Include="Items\Weapons\AdamantiteComp.cs" />
+    <Compile Include="Items\Weapons\Airstrike.cs" />
+    <Compile Include="Items\Weapons\BoomSaw.cs" />
+    <Compile Include="Items\Weapons\ChlorophyteComp.cs" />
+    <Compile Include="Items\Weapons\CobaltComp.cs" />
+    <Compile Include="Items\Weapons\Cometfury.cs" />
+    <Compile Include="Items\Weapons\Copperhand.cs" />
+    <Compile Include="Items\Weapons\Decimation.cs" />
+    <Compile Include="Items\Weapons\FlockoChild.cs" />
+    <Compile Include="Items\Weapons\Focusfire.cs" />
+    <Compile Include="Items\Weapons\ForestAxeWeapon.cs" />
+    <Compile Include="Items\Weapons\ForestBow.cs" />
+    <Compile Include="Items\Weapons\ForestStaff.cs" />
+    <Compile Include="Items\Weapons\Gatlidart.cs" />
+    <Compile Include="Items\Weapons\HallowedComp.cs" />
+    <Compile Include="Items\Weapons\HellstoneKnife.cs" />
+    <Compile Include="Items\Weapons\Infernohand.cs" />
+    <Compile Include="Items\Weapons\JackoLantern.cs" />
+    <Compile Include="Items\Weapons\MakeshiftFlintlock.cs" />
+    <Compile Include="Items\Weapons\MeteorKnife.cs" />
+    <Compile Include="Items\Weapons\Moongazer.cs" />
+    <Compile Include="Items\Weapons\MythrilComp.cs" />
+    <Compile Include="Items\Weapons\OrichalcumComp.cs" />
+    <Compile Include="Items\Weapons\PalladiumComp.cs" />
+    <Compile Include="Items\Weapons\PhantomDagger.cs" />
+    <Compile Include="Items\Weapons\PhoenixwingBow.cs" />
+    <Compile Include="Items\Weapons\PipeShotgun.cs" />
+    <Compile Include="Items\Weapons\ShockKnife.cs" />
+    <Compile Include="Items\Weapons\ShroomiteKnife.cs" />
+    <Compile Include="Items\Weapons\SolarKnife.cs" />
+    <Compile Include="Items\Weapons\SpectralBlaster.cs" />
+    <Compile Include="Items\Weapons\StaffofAgni.cs" />
+    <Compile Include="Items\Weapons\StoneShot.cs" />
+    <Compile Include="Items\Weapons\SubmarinersHarpoon.cs" />
+    <Compile Include="Items\Ammo\TideArrow.cs" />
+    <Compile Include="Items\Weapons\ThunderboltSpear.cs" />
+    <Compile Include="Items\Weapons\TideShot.cs" />
+    <Compile Include="Items\Weapons\Tinhand.cs" />
+    <Compile Include="Items\Weapons\TitaniumComp.cs" />
+    <Compile Include="Items\Weapons\TrueHallowedComp.cs" />
+    <Compile Include="Items\Weapons\YinYangKnife.cs" />
+    <Compile Include="MyPlayer.cs" />
+    <Compile Include="MyWorld.cs" />
+    <Compile Include="NPCs\CursedDoll.cs" />
+    <Compile Include="NPCs\ForestSpirit.cs" />
+    <Compile Include="NPCs\GlobalNPCs.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Projectiles\AxeWave.cs" />
+    <Compile Include="Projectiles\Comet.cs" />
+    <Compile Include="Projectiles\CometTrail.cs" />
+    <Compile Include="Projectiles\CopperSS.cs" />
+    <Compile Include="Projectiles\FlockoProj.cs" />
+    <Compile Include="Projectiles\FlockoShard.cs" />
+    <Compile Include="Projectiles\ForestBolt.cs" />
+    <Compile Include="Projectiles\ForestExplosion.cs" />
+    <Compile Include="Projectiles\GoodForestBolt.cs" />
+    <Compile Include="Projectiles\HellstoneKnifeProj.cs" />
+    <Compile Include="Projectiles\HostileAcornMine.cs" />
+    <Compile Include="Projectiles\JackoLanternProj.cs" />
+    <Compile Include="Projectiles\LeafArrow.cs" />
+    <Compile Include="Projectiles\LeafArrow2.cs" />
+    <Compile Include="Projectiles\LightningBoltProj.cs" />
+    <Compile Include="Projectiles\MeteorKnifeProj.cs" />
+    <Compile Include="Projectiles\PhantomDaggerProj.cs" />
+    <Compile Include="Projectiles\ShockKnifeProj.cs" />
+    <Compile Include="Projectiles\ShroomiteKnifeProj.cs" />
+    <Compile Include="Projectiles\SolarKnifeProj.cs" />
+    <Compile Include="Projectiles\SolarSpear.cs" />
+    <Compile Include="Projectiles\SolarWasp.cs" />
+    <Compile Include="Projectiles\SpectralBlast.cs" />
+    <Compile Include="Projectiles\SpectralBlastParts.cs" />
+    <Compile Include="Projectiles\SubmarinersHarpoonProj.cs" />
+    <Compile Include="Projectiles\ThunderboltProj.cs" />
+    <Compile Include="Projectiles\ThunderboltSpearProj.cs" />
+    <Compile Include="Projectiles\TideArrowProj.cs" />
+    <Compile Include="Projectiles\TinSS.cs" />
+    <Compile Include="Projectiles\YinYangKnifeProj.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Xact\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Terraria">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\terraria\Terraria.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dusts\" />
+    <Folder Include="Items\Armor\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Steam\steamapps\common\terraria\Terraria.exe" -build "$(ProjectDir)\" -eac "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

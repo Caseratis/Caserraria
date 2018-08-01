@@ -1,0 +1,10 @@
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\bin\Debug\Caserraria.dll
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\bin\Debug\Caserraria.pdb
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\bin\Debug\Microsoft.Xna.Framework.dll
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\bin\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\bin\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\bin\Debug\Microsoft.Xna.Framework.Xact.dll
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\bin\Debug\Terraria.exe
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\obj\Debug\Caserraria.csprojResolveAssemblyReference.cache
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\obj\Debug\Caserraria.dll
+C:\Users\Casey\Documents\My Games\Terraria\ModLoader\Mod Sources\Caserraria\obj\Debug\Caserraria.pdb
