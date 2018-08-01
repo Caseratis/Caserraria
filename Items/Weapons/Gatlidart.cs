@@ -18,8 +18,8 @@ namespace Caserraria.Items.Weapons
         {
             item.damage = 30;
             item.ranged = true;
-            item.width = 40;
-            item.height = 20;
+            item.width = 44;
+            item.height = 24;
             item.useTime = 10;
             item.useAnimation = 10;
             item.useStyle = 5;
