@@ -60,6 +60,7 @@
     <Compile Include="Items\Weapons\Cometfury.cs" />
     <Compile Include="Items\Weapons\Copperhand.cs" />
     <Compile Include="Items\Weapons\Decimation.cs" />
+    <Compile Include="Items\Weapons\EmeraldSplash.cs" />
     <Compile Include="Items\Weapons\FlockoChild.cs" />
     <Compile Include="Items\Weapons\Focusfire.cs" />
     <Compile Include="Items\Weapons\ForestAxeWeapon.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Items\Weapons\Infernohand.cs" />
     <Compile Include="Items\Weapons\JackoLantern.cs" />
     <Compile Include="Items\Weapons\MakeshiftFlintlock.cs" />
+    <Compile Include="Items\Weapons\MeatCleaver.cs" />
     <Compile Include="Items\Weapons\MeteorKnife.cs" />
     <Compile Include="Items\Weapons\Moongazer.cs" />
     <Compile Include="Items\Weapons\MythrilComp.cs" />
@@ -79,6 +81,7 @@
     <Compile Include="Items\Weapons\PhantomDagger.cs" />
     <Compile Include="Items\Weapons\PhoenixwingBow.cs" />
     <Compile Include="Items\Weapons\PipeShotgun.cs" />
+    <Compile Include="Items\Weapons\QuadraticRifle.cs" />
     <Compile Include="Items\Weapons\ShockKnife.cs" />
     <Compile Include="Items\Weapons\ShroomiteKnife.cs" />
     <Compile Include="Items\Weapons\SolarKnife.cs" />
@@ -92,9 +95,11 @@
     <Compile Include="Items\Weapons\Tinhand.cs" />
     <Compile Include="Items\Weapons\TitaniumComp.cs" />
     <Compile Include="Items\Weapons\TrueHallowedComp.cs" />
+    <Compile Include="Items\Weapons\VortexDisc.cs" />
     <Compile Include="Items\Weapons\YinYangKnife.cs" />
     <Compile Include="MyPlayer.cs" />
     <Compile Include="MyWorld.cs" />
+    <Compile Include="NPCs\Cryomancer.cs" />
     <Compile Include="NPCs\CursedDoll.cs" />
     <Compile Include="NPCs\ForestSpirit.cs" />
     <Compile Include="NPCs\GlobalNPCs.cs" />
@@ -105,6 +110,7 @@
     <Compile Include="Projectiles\Comet.cs" />
     <Compile Include="Projectiles\CometTrail.cs" />
     <Compile Include="Projectiles\CopperSS.cs" />
+    <Compile Include="Projectiles\EmeraldSplashProj.cs" />
     <Compile Include="Projectiles\FlockoProj.cs" />
     <Compile Include="Projectiles\FlockoShard.cs" />
     <Compile Include="Projectiles\ForestBolt.cs" />
@@ -121,8 +127,6 @@
     <Compile Include="Projectiles\ShockKnifeProj.cs" />
     <Compile Include="Projectiles\ShroomiteKnifeProj.cs" />
     <Compile Include="Projectiles\SolarKnifeProj.cs" />
-    <Compile Include="Projectiles\SolarSpear.cs" />
-    <Compile Include="Projectiles\SolarWasp.cs" />
     <Compile Include="Projectiles\SpectralBlast.cs" />
     <Compile Include="Projectiles\SpectralBlastParts.cs" />
     <Compile Include="Projectiles\SubmarinersHarpoonProj.cs" />
@@ -130,6 +134,7 @@
     <Compile Include="Projectiles\ThunderboltSpearProj.cs" />
     <Compile Include="Projectiles\TideArrowProj.cs" />
     <Compile Include="Projectiles\TinSS.cs" />
+    <Compile Include="Projectiles\VortexDiscProj.cs" />
     <Compile Include="Projectiles\YinYangKnifeProj.cs" />
   </ItemGroup>
   <ItemGroup>

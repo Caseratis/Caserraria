@@ -30,6 +30,7 @@ namespace Caserraria.Projectiles
 		public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
 	    {
 			target.AddBuff(BuffID.Daybreak, 300);
-		}
+            Projectile.NewProjectile(target.position.X, target.position.Y, 0, 0, ProjectileID.SolarWhipSwordExplosion, damage, 0, Main.myPlayer);
+        }
 	}
 }
