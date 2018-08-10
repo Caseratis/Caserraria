@@ -19,11 +19,11 @@ namespace Caserraria.Items.Weapons
             item.damage = 25;
             item.magic = true;
             item.noMelee = true;
-            item.mana = 3;
+            item.mana = 5;
             item.width = 84;
             item.height = 112;
-            item.useTime = 16;
-            item.useAnimation = 16;
+            item.useTime = 8;
+            item.useAnimation = 8;
             item.useStyle = 5;
             item.noMelee = true; //so the item's animation doesn't do damage
             item.knockBack = 3;
@@ -38,15 +38,13 @@ namespace Caserraria.Items.Weapons
 
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
-            int numberProjectiles = 2 + Main.rand.Next(2); // 4 or 5 shots
-            for (int i = 0; i < numberProjectiles; i++)
-            {
-                Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(10)); // 30 degree spread.
+
+                Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedByRandom(MathHelper.ToRadians(15)); // 15 degree spread.
                                                                                                                 // If you want to randomize the speed to stagger the projectiles
                                                                                                                 // float scale = 1f - (Main.rand.NextFloat() * .3f);
                                                                                                                 // perturbedSpeed = perturbedSpeed * scale; 
                 Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
-            }
+            
             return false; // return false because we don't want tmodloader to shoot projectile
         }
 

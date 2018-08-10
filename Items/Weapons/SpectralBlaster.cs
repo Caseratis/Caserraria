@@ -28,7 +28,7 @@ namespace Caserraria.Items.Weapons
             item.UseSound = SoundID.Item38;
             item.autoReuse = true;
             item.shoot = 10; //idk why but all the guns in the vanilla source have this
-            item.shootSpeed = 10f;
+            item.shootSpeed = 5f;
             item.useAmmo = AmmoID.Bullet;
         }
 
@@ -55,7 +55,7 @@ namespace Caserraria.Items.Weapons
                 Projectile.NewProjectile(position.X, position.Y, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
             }
 
-            Projectile.NewProjectile(position.X, position.Y, speedX, speedY, mod.ProjectileType("SpectralBlast"), damage, knockBack, player.whoAmI);
+            Projectile.NewProjectile(position.X, position.Y, speedX*2, speedY*2, mod.ProjectileType("SpectralBlast"), damage, knockBack, player.whoAmI);
             return false;
         }
     }

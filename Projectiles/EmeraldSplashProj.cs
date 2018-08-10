@@ -31,10 +31,10 @@ namespace Caserraria.Projectiles
         public override void AI()
         {
 
-            for (int k = 0; k < 10; k++)
+            for (int k = 0; k < 20; k++)
             {
                 Dust dust;
-                dust = Main.dust[Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, 61, 0, 0, 0, new Color(255, 255, 255), 1.5f)];
+                dust = Main.dust[Dust.NewDust(projectile.Center + projectile.velocity, projectile.width/4, projectile.height/4, 61, 0, 0, 0, new Color(255, 255, 255), 1.5f)];
                 dust.noGravity = true;
             }
         }

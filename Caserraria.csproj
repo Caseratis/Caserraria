@@ -70,12 +70,14 @@
     <Compile Include="Items\Weapons\HallowedComp.cs" />
     <Compile Include="Items\Weapons\HellstoneKnife.cs" />
     <Compile Include="Items\Weapons\Infernohand.cs" />
+    <Compile Include="Items\Weapons\InfernoWand.cs" />
     <Compile Include="Items\Weapons\JackoLantern.cs" />
     <Compile Include="Items\Weapons\MakeshiftFlintlock.cs" />
     <Compile Include="Items\Weapons\MeatCleaver.cs" />
     <Compile Include="Items\Weapons\MeteorKnife.cs" />
     <Compile Include="Items\Weapons\Moongazer.cs" />
     <Compile Include="Items\Weapons\MythrilComp.cs" />
+    <Compile Include="Items\Weapons\OlympianLance.cs" />
     <Compile Include="Items\Weapons\OrichalcumComp.cs" />
     <Compile Include="Items\Weapons\PalladiumComp.cs" />
     <Compile Include="Items\Weapons\PhantomDagger.cs" />
@@ -111,6 +113,7 @@
     <Compile Include="Projectiles\CometTrail.cs" />
     <Compile Include="Projectiles\CopperSS.cs" />
     <Compile Include="Projectiles\EmeraldSplashProj.cs" />
+    <Compile Include="Projectiles\FlamesProj.cs" />
     <Compile Include="Projectiles\FlockoProj.cs" />
     <Compile Include="Projectiles\FlockoShard.cs" />
     <Compile Include="Projectiles\ForestBolt.cs" />
@@ -118,6 +121,7 @@
     <Compile Include="Projectiles\GoodForestBolt.cs" />
     <Compile Include="Projectiles\HellstoneKnifeProj.cs" />
     <Compile Include="Projectiles\HostileAcornMine.cs" />
+    <Compile Include="Projectiles\InfernoProj.cs" />
     <Compile Include="Projectiles\JackoLanternProj.cs" />
     <Compile Include="Projectiles\LeafArrow.cs" />
     <Compile Include="Projectiles\LeafArrow2.cs" />

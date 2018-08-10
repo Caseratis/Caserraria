@@ -22,13 +22,14 @@ namespace Caserraria.Projectiles
             projectile.friendly = true;
             projectile.penetrate = 1;
             projectile.timeLeft = 45;
-            projectile.tileCollide = false;
+            projectile.tileCollide = true;
             projectile.alpha = 255;
-            projectile.extraUpdates = 1;
         }
 
         public override void AI()
         {
+            for (int k = 0; k < 15; k++)
+            {
 
                 Dust dust;
                 // You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
@@ -36,6 +37,7 @@ namespace Caserraria.Projectiles
                 dust = Main.dust[Terraria.Dust.NewDust(position, 30, 30, 175, 0f, 0f, 0, new Color(255, 255, 255), 2f)];
                 dust.noGravity = true;
                 dust.fadeIn = 3f;
+            }
             
 
 

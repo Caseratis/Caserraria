@@ -35,7 +35,6 @@ namespace Caserraria.Items.Materials
 			recipe.AddIngredient(ItemID.FragmentStardust, 25);
 			recipe.AddIngredient(ItemID.FragmentNebula, 25);
 			recipe.AddIngredient(ItemID.IllegalGunParts, 1);
-			recipe.AddIngredient(ItemID.SuspiciousLookingTentacle, 1);
 			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
