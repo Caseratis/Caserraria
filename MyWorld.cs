@@ -10,14 +10,12 @@ namespace Caserraria
     public class MyWorld : ModWorld
     {
         public static bool downedForestSpirit = false;
-        public static bool downedDarkSlime = false;
-        public static bool downedHardGoblinArmy = false;
+
 
         public override void Initialize()
         {
             downedForestSpirit = false;
-            downedDarkSlime = false;
-            downedHardGoblinArmy = false;
+
             
         }
 
@@ -26,7 +24,7 @@ namespace Caserraria
             var downed = new List<string>();
 
             if (downedForestSpirit) downed.Add("ForestSpirit");
-            if (downedDarkSlime) downed.Add("DarkSlime");
+
  
 
             return new TagCompound {
@@ -38,15 +36,14 @@ namespace Caserraria
         {
             var downed = tag.GetList<string>("downed");
             downedForestSpirit = downed.Contains("ForestSpirit");
-            downedDarkSlime = downed.Contains("DarkSlime");
+
         }
 
         public override void NetSend(BinaryWriter writer)
         {
             BitsByte flags = new BitsByte();
             flags[0] = downedForestSpirit;
-            flags[0] = downedDarkSlime;
-            flags[0] = downedHardGoblinArmy;
+
             writer.Write(flags);
 
         }
@@ -55,8 +52,7 @@ namespace Caserraria
         {
             BitsByte flags = new BitsByte();
             downedForestSpirit = flags[0];
-            downedDarkSlime = flags[0];
-            downedHardGoblinArmy = flags[0];
+
         }
     }
 }

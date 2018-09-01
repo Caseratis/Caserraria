@@ -39,8 +39,11 @@
     <Compile Include="Items\Accessories\GraniteCore.cs" />
     <Compile Include="Items\Accessories\GraniteMedallion.cs" />
     <Compile Include="Items\Accessories\HeavyBoots.cs" />
+    <Compile Include="Items\InventoryItems\OrnatePlate.cs" />
+    <Compile Include="Items\InventoryItems\Roblox.cs" />
+    <Compile Include="Items\InventoryItems\TrueDiscoBall.cs" />
     <Compile Include="Items\Accessories\WoodCharm.cs" />
-    <Compile Include="Items\ForestTotem.cs" />
+    <Compile Include="Items\Consumables\ForestTotem.cs" />
     <Compile Include="Items\ForestTreasureBag.cs" />
     <Compile Include="Items\Healing\FlowerTea.cs" />
     <Compile Include="Items\Healing\GrilledMushroom.cs" />
@@ -164,8 +167,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Buffs\" />
     <Folder Include="Dusts\" />
     <Folder Include="Items\Armor\" />
+    <Folder Include="Sounds\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

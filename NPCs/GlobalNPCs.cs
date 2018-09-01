@@ -21,6 +21,21 @@ namespace Caserraria.NPCs
             {
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("JackoLantern"));
             }
+
+            if (npc.type == NPCID.MoonLordCore && Main.rand.Next(0, 5) == 0)
+            {
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TrueDiscoball"));
+            }
+        }
+
+        public override void SetupShop(int type, Chest shop, ref int nextSlot)
+        {
+            if (type == NPCID.TravellingMerchant)
+            {
+                shop.item[nextSlot].SetDefaults(mod.ItemType("OrnatePlate"));
+                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum: 5);
+                nextSlot++;
+            }
         }
     }
 }

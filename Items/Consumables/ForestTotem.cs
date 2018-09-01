@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Caserraria.Items
+namespace Caserraria.Items.Consumables
 {
     public class ForestTotem : ModItem
     {

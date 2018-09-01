@@ -12,21 +12,84 @@ namespace Caserraria
 {
     public class MyPlayer : ModPlayer
     {
-        public static bool KShield = false;
+        public bool Ornate = false;
+        public bool MoonWalk = false;
+        public bool Oof = false;
 
         public override void ResetEffects()
         {
-            KShield = false;
+            Ornate = false;
+            MoonWalk = false;
+            Oof = false;
         }
 
-        public override bool PreHurt(bool pvp, bool quiet, ref int damage, ref int hitDirection, ref bool crit,
-            ref bool customDamage, ref bool playSound, ref bool genGore, ref PlayerDeathReason damageSource)
+        public override void UpdateEquips(ref bool wallSpeedBuff, ref bool tileSpeedBuff, ref bool tileRangeBuff)
         {
-            if (KShield == true && Main.rand.Next(0, 10) == 0)
+            if (Ornate)
             {
-                damage = damage / 2;
+                MyPlayer p = player.GetModPlayer<MyPlayer>();
+                if (player.velocity.Y > 0 || player.velocity.Y < 0)
+                {
+                    if (player.velocity.X > 0)
+                    {
+                        player.fullRotationOrigin = player.Center - player.position;
+                        player.fullRotation += 0.25f;
+                    }
+
+                    if (player.velocity.X < 0)
+                    {
+                        player.fullRotationOrigin = player.Center - player.position;
+                        player.fullRotation -= 0.25f;
+                    }
+                }
+
+                else
+                {
+                    player.fullRotation = 0f;
+                }
+
+                for (int k = 0; k < 1; k++)
+                {
+                    Dust dust;
+                    dust = Main.dust[Dust.NewDust(player.Center - new Vector2(10, 15), player.width, player.height, 169, 0, 0, 0, new Color(255, 255, 255), 1.5f)];
+                    dust.noGravity = true;
+                }
+            }
+        }
+
+        public override void PreUpdateMovement()
+        {
+            if (MoonWalk == true)
+            {
+                if (player.controlRight == true)
+                {
+                    player.direction = 0;
+                }
+
+                if (player.controlLeft == true)
+                {
+                    player.direction = 1;
+                }
+            }
+        }
+
+        public override bool PreHurt(bool pvp, bool quiet, ref int damage, ref int hitDirection, ref bool crit, ref bool customDamage, ref bool playSound, ref bool genGore, ref PlayerDeathReason damageSource)
+        {
+            if (Oof)
+            {
+                playSound = false;
             }
             return true;
         }
+        public override void Hurt(bool pvp, bool quiet, double damage, int hitDirection, bool crit)
+        {
+            if (Oof)
+            {
+                Main.PlaySound(SoundLoader.customSoundType, (int)player.position.X, (int)player.position.Y, mod.GetSoundSlot(SoundType.Custom, "Sounds/OOF"));
+            }
+        }
+        
+            
+        
     }
 }
