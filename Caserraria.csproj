@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Buffs\ScytheMount.cs" />
     <Compile Include="Caserraria.cs" />
     <Compile Include="Items\Accessories\AncientHeroMedallion.cs" />
     <Compile Include="Items\Accessories\GoldenKnight.cs" />
@@ -63,7 +64,9 @@
     <Compile Include="Items\Weapons\Cometfury.cs" />
     <Compile Include="Items\Weapons\Copperhand.cs" />
     <Compile Include="Items\Weapons\Decimation.cs" />
+    <Compile Include="Items\Weapons\DustKnuckles.cs" />
     <Compile Include="Items\Weapons\EmeraldSplash.cs" />
+    <Compile Include="Items\Weapons\FlareWand.cs" />
     <Compile Include="Items\Weapons\FlockoChild.cs" />
     <Compile Include="Items\Weapons\Focusfire.cs" />
     <Compile Include="Items\Weapons\ForestAxeWeapon.cs" />
@@ -102,12 +105,15 @@
     <Compile Include="Items\Weapons\TrueHallowedComp.cs" />
     <Compile Include="Items\Weapons\VortexDisc.cs" />
     <Compile Include="Items\Weapons\YinYangKnife.cs" />
+    <Compile Include="Mounts\Scythe.cs" />
+    <Compile Include="Mounts\SpecterScythe.cs" />
     <Compile Include="MyPlayer.cs" />
     <Compile Include="MyWorld.cs" />
     <Compile Include="NPCs\Cryomancer.cs" />
     <Compile Include="NPCs\CursedDoll.cs" />
     <Compile Include="NPCs\ForestSpirit.cs" />
     <Compile Include="NPCs\GlobalNPCs.cs" />
+    <Compile Include="NPCs\StrangeChest.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -115,7 +121,9 @@
     <Compile Include="Projectiles\Comet.cs" />
     <Compile Include="Projectiles\CometTrail.cs" />
     <Compile Include="Projectiles\CopperSS.cs" />
+    <Compile Include="Projectiles\DustKnucklesBreak.cs" />
     <Compile Include="Projectiles\EmeraldSplashProj.cs" />
+    <Compile Include="Projectiles\FireBall.cs" />
     <Compile Include="Projectiles\FlamesProj.cs" />
     <Compile Include="Projectiles\FlockoProj.cs" />
     <Compile Include="Projectiles\FlockoShard.cs" />
@@ -167,7 +175,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Buffs\" />
     <Folder Include="Dusts\" />
     <Folder Include="Items\Armor\" />
     <Folder Include="Sounds\" />

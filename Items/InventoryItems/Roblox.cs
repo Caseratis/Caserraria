@@ -17,7 +17,7 @@ namespace Caserraria.Items.InventoryItems
         {
             item.width = 26;
             item.height = 30;
-            item.value = 1;
+            item.value = Item.sellPrice(gold: 10);
             item.rare = 11;
         }
 
@@ -30,6 +30,16 @@ namespace Caserraria.Items.InventoryItems
             }
 
 
+        }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.MusicBox);
+            recipe.AddIngredient(ItemID.SoulofFright, 3);
+            recipe.AddTile(TileID.MythrilAnvil);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
         }
 
     }

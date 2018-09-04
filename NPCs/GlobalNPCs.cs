@@ -22,6 +22,11 @@ namespace Caserraria.NPCs
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("JackoLantern"));
             }
 
+            if (npc.type == NPCID.Pumpking && Main.rand.Next(0, 5) == 0)
+            {
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("SpecterScythe"));
+            }
+
             if (npc.type == NPCID.MoonLordCore && Main.rand.Next(0, 5) == 0)
             {
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TrueDiscoball"));
@@ -37,5 +42,6 @@ namespace Caserraria.NPCs
                 nextSlot++;
             }
         }
+
     }
 }

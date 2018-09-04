@@ -17,8 +17,9 @@ namespace Caserraria.Items.InventoryItems
         {
             item.width = 26;
             item.height = 30;
-            item.value = 1;
+            item.value = Item.sellPrice(gold: 30);
             item.rare = 11;
+
         }
 
         public override void UpdateInventory(Player player)

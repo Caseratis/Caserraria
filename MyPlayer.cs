@@ -47,13 +47,11 @@ namespace Caserraria
                 {
                     player.fullRotation = 0f;
                 }
+            }
 
-                for (int k = 0; k < 1; k++)
-                {
-                    Dust dust;
-                    dust = Main.dust[Dust.NewDust(player.Center - new Vector2(10, 15), player.width, player.height, 169, 0, 0, 0, new Color(255, 255, 255), 1.5f)];
-                    dust.noGravity = true;
-                }
+            else
+            {
+                player.fullRotation = 0f;
             }
         }
 
