@@ -33,7 +33,7 @@ namespace Caserraria.Items.Weapons
             item.UseSound = SoundID.Item38;
             item.autoReuse = true;
             item.shoot = 10;
-            item.shootSpeed = 24f;
+            item.shootSpeed = 30f;
             item.useAmmo = AmmoID.Bullet;
         }
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)

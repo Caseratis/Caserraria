@@ -30,7 +30,7 @@ namespace Caserraria.Projectiles
         }
         public override void AI()
         {
-            speed++;
+            
             if (speed >= 10)
             {
                 speed = 0;

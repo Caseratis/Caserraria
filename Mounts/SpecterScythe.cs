@@ -1,5 +1,6 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria;
 
 namespace Caserraria.Mounts
 
@@ -18,8 +19,8 @@ namespace Caserraria.Mounts
             item.useTime = 20;
             item.useAnimation = 20;
             item.useStyle = 1;
-            item.value = 30000;
-            item.rare = 2;
+            item.value = Item.buyPrice(gold: 30);
+            item.rare = 5;
             item.UseSound = SoundID.Item79;
             item.noMelee = true;
             item.mountType = mod.MountType("Scythe");

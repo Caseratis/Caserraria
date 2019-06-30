@@ -28,7 +28,7 @@ namespace Caserraria.Projectiles
 
         public override void AI()
         {
-            for (int k = 0; k < 15; k++)
+            for (int k = 0; k < 10; k++)
             {
 
                 Dust dust;

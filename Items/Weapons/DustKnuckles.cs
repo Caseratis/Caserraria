@@ -20,13 +20,13 @@ namespace Caserraria.Items.Weapons
 
         public override void SetDefaults()
         {
-            item.damage = 30;
+            item.damage = 45;
             item.melee = true;
             item.width = 48;
             item.height = 48;
             item.useTime = 15;
             item.useAnimation = 15;
-            item.useStyle = 3;
+            item.useStyle = 5;
             item.knockBack = 5f;
             item.value = Item.buyPrice(gold: 10);
             item.rare = 3;
@@ -36,6 +36,8 @@ namespace Caserraria.Items.Weapons
             item.shoot = mod.ProjectileType("DustKnucklesBreak");
             
         }
+
+
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {
             if (player.direction == 1)
@@ -62,9 +64,26 @@ namespace Caserraria.Items.Weapons
 
             return false;
         }
-        
 
-        
+        public override void UseItemHitbox(Player player, ref Rectangle hitbox, ref bool noHitbox)
+        {
+            if (player.direction == 1)
+            {
+                hitbox.X = (int)player.position.X + 20;
+                hitbox.Y = (int)player.position.Y + 15;
+            }
+            else
+            {
+                hitbox.X = (int)player.position.X - 20;
+                hitbox.Y = (int)player.position.Y + 15;
+            }
+        }
+
+        public override Vector2? HoldoutOffset()
+        {
+            return new Vector2(13, 2);
+
+        }
     }
     
 }

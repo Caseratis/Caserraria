@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using Terraria;
+using Terraria.GameContent.Generation;
+using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
+using Terraria.World.Generation;
 
 namespace Caserraria
 {
@@ -16,7 +19,7 @@ namespace Caserraria
         {
             downedForestSpirit = false;
 
-            
+
         }
 
         public override TagCompound Save()
@@ -25,7 +28,7 @@ namespace Caserraria
 
             if (downedForestSpirit) downed.Add("ForestSpirit");
 
- 
+
 
             return new TagCompound {
                 {"downed", downed},

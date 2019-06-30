@@ -20,7 +20,7 @@ namespace Caserraria.Projectiles
             projectile.height = 40;
             projectile.friendly = true;
             projectile.penetrate = 5;
-            projectile.timeLeft = 60;
+            projectile.timeLeft = 30;
             projectile.tileCollide = true;
         }
 

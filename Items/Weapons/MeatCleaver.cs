@@ -17,8 +17,8 @@ namespace Caserraria.Items.Weapons
         {
             item.damage = 45;
             item.melee = true;
-            item.width = 70;
-            item.height = 80;
+            item.width = 80;
+            item.height = 86;
             item.useTime = 15;
             item.useAnimation = 25;
             item.useStyle = 1;

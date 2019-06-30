@@ -40,6 +40,8 @@
     <Compile Include="Items\Accessories\GraniteCore.cs" />
     <Compile Include="Items\Accessories\GraniteMedallion.cs" />
     <Compile Include="Items\Accessories\HeavyBoots.cs" />
+    <Compile Include="Items\EnchantedClock.cs" />
+    <Compile Include="Items\HoardSpawner.cs" />
     <Compile Include="Items\InventoryItems\OrnatePlate.cs" />
     <Compile Include="Items\InventoryItems\Roblox.cs" />
     <Compile Include="Items\InventoryItems\TrueDiscoBall.cs" />
@@ -55,10 +57,13 @@
     <Compile Include="Items\Healing\PurifiedWater.cs" />
     <Compile Include="Items\Healing\SearedHoneyfin.cs" />
     <Compile Include="Items\Healing\StalwartPotion.cs" />
+    <Compile Include="Items\MagicClock.cs" />
     <Compile Include="Items\Materials\Unknownparts.cs" />
     <Compile Include="Items\Weapons\AdamantiteComp.cs" />
     <Compile Include="Items\Weapons\Airstrike.cs" />
+    <Compile Include="Items\Weapons\AlchemyCoin.cs" />
     <Compile Include="Items\Weapons\BoomSaw.cs" />
+    <Compile Include="Items\Weapons\ChaosSphere.cs" />
     <Compile Include="Items\Weapons\ChlorophyteComp.cs" />
     <Compile Include="Items\Weapons\CobaltComp.cs" />
     <Compile Include="Items\Weapons\Cometfury.cs" />
@@ -89,8 +94,10 @@
     <Compile Include="Items\Weapons\PhantomDagger.cs" />
     <Compile Include="Items\Weapons\PhoenixwingBow.cs" />
     <Compile Include="Items\Weapons\PipeShotgun.cs" />
+    <Compile Include="Items\Weapons\PropellerDagger.cs" />
     <Compile Include="Items\Weapons\QuadraticRifle.cs" />
     <Compile Include="Items\Weapons\ShockKnife.cs" />
+    <Compile Include="Items\Weapons\ShovelBlade.cs" />
     <Compile Include="Items\Weapons\ShroomiteKnife.cs" />
     <Compile Include="Items\Weapons\SolarKnife.cs" />
     <Compile Include="Items\Weapons\SpectralBlaster.cs" />
@@ -98,12 +105,14 @@
     <Compile Include="Items\Weapons\StoneShot.cs" />
     <Compile Include="Items\Weapons\SubmarinersHarpoon.cs" />
     <Compile Include="Items\Ammo\TideArrow.cs" />
+    <Compile Include="Items\Weapons\ThrowningAnchor.cs" />
     <Compile Include="Items\Weapons\ThunderboltSpear.cs" />
     <Compile Include="Items\Weapons\TideShot.cs" />
     <Compile Include="Items\Weapons\Tinhand.cs" />
     <Compile Include="Items\Weapons\TitaniumComp.cs" />
     <Compile Include="Items\Weapons\TrueHallowedComp.cs" />
     <Compile Include="Items\Weapons\VortexDisc.cs" />
+    <Compile Include="Items\Weapons\WarHorn.cs" />
     <Compile Include="Items\Weapons\YinYangKnife.cs" />
     <Compile Include="Mounts\Scythe.cs" />
     <Compile Include="Mounts\SpecterScythe.cs" />
@@ -117,7 +126,9 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Projectiles\AlchemyCoinProj.cs" />
     <Compile Include="Projectiles\AxeWave.cs" />
+    <Compile Include="Projectiles\ChaosSphereProj.cs" />
     <Compile Include="Projectiles\Comet.cs" />
     <Compile Include="Projectiles\CometTrail.cs" />
     <Compile Include="Projectiles\CopperSS.cs" />
@@ -145,11 +156,13 @@
     <Compile Include="Projectiles\SpectralBlast.cs" />
     <Compile Include="Projectiles\SpectralBlastParts.cs" />
     <Compile Include="Projectiles\SubmarinersHarpoonProj.cs" />
+    <Compile Include="Projectiles\ThrowingAnchorProj.cs" />
     <Compile Include="Projectiles\ThunderboltProj.cs" />
     <Compile Include="Projectiles\ThunderboltSpearProj.cs" />
     <Compile Include="Projectiles\TideArrowProj.cs" />
     <Compile Include="Projectiles\TinSS.cs" />
     <Compile Include="Projectiles\VortexDiscProj.cs" />
+    <Compile Include="Projectiles\WarHornProj.cs" />
     <Compile Include="Projectiles\YinYangKnifeProj.cs" />
   </ItemGroup>
   <ItemGroup>

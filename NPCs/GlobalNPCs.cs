@@ -9,6 +9,13 @@ namespace Caserraria.NPCs
 {
     public class GlobalNPCs : GlobalNPC
     {
+        public override bool InstancePerEntity
+        {
+            get
+            {
+                return true;
+            }
+        }
 
         public override void NPCLoot(NPC npc)
         {
@@ -33,14 +40,15 @@ namespace Caserraria.NPCs
             }
         }
 
-        public override void SetupShop(int type, Chest shop, ref int nextSlot)
+        public override void EditSpawnRate(Player player, ref int spawnRate, ref int maxSpawns)
         {
-            if (type == NPCID.TravellingMerchant)
+            MyPlayer p = player.GetModPlayer<MyPlayer>();
+            if (p.hoardCalled)
             {
-                shop.item[nextSlot].SetDefaults(mod.ItemType("OrnatePlate"));
-                shop.item[nextSlot].shopCustomPrice = Item.buyPrice(platinum: 5);
-                nextSlot++;
+                spawnRate /= 100;
+                maxSpawns *= 100;
             }
+
         }
 
     }

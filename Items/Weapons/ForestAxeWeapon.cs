@@ -9,7 +9,7 @@ namespace Caserraria.Items.Weapons
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Axe of the Forest");
+            DisplayName.SetDefault("Pickaxe of the Forest");
             Tooltip.SetDefault("Right click to fire a wave of energy");
         }
 
@@ -22,6 +22,7 @@ namespace Caserraria.Items.Weapons
             item.useTime = 20;
             item.useAnimation = 20;
             item.axe = 25;          //How much axe power the weapon has, note that the axe power displayed in-game is this value multiplied by 5
+            item.pick = 55;
             item.useStyle = 1;
             item.knockBack = 6;
             item.value = 10000;

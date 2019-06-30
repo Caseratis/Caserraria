@@ -16,9 +16,9 @@ namespace Caserraria.Items.InventoryItems
 
         public override void SetDefaults()
         {
-            item.width = 28;
-            item.height = 38;
-            item.value = Item.sellPrice(platinum: 1);
+            item.width = 38;
+            item.height = 24;
+            item.value = Item.buyPrice(platinum: 1);
             item.rare = 8;
         }
 

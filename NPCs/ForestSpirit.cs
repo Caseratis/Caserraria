@@ -41,12 +41,6 @@ namespace Caserraria.NPCs
             npc.boss = true;
         }
 
-        public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
-        {
-            npc.lifeMax = 2000;
-            npc.damage = 35;
-        }
-
         public override void FindFrame(int frameHeight)
         {
             animationTimer++;

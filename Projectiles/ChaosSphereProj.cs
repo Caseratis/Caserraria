@@ -7,39 +7,32 @@ using Terraria.ModLoader;
 
 namespace Caserraria.Projectiles
 {
-    public class EmeraldSplashProj : ModProjectile
+    public class ChaosSphereProj : ModProjectile
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Emerald Splash");     //The English name of the projectile
+            DisplayName.SetDefault("ChaosSphere");     //The English name of the projectile
         }
 
         public override void SetDefaults()
         {
-            projectile.width = 16;
-            projectile.height = 16;
+            projectile.width = 22;
+            projectile.height = 22;
             projectile.timeLeft /= 2;
-            projectile.penetrate = 10;
+            projectile.penetrate = 5;
             projectile.friendly = true;
             projectile.hostile = false;
             projectile.tileCollide = true;
             projectile.ignoreWater = true;
             projectile.magic = true;
-            projectile.alpha = 255;
+            projectile.aiStyle = 1;
+            
         }
 
         public override void AI()
         {
-
-            for (int k = 0; k < 10; k++)
-            {
-                Dust dust;
-                dust = Main.dust[Dust.NewDust(projectile.Center + projectile.velocity, projectile.width/4, projectile.height/4, 61, 0, 0, 0, new Color(255, 255, 255), 1.5f)];
-                dust.noGravity = true;
-            }
+            projectile.rotation = 0;
         }
-
-
 
         public override bool OnTileCollide(Vector2 oldVelocity)
         {
@@ -62,6 +55,12 @@ namespace Caserraria.Projectiles
                 Main.PlaySound(SoundID.Item10, projectile.position);
             }
             return false;
+        }
+
+        public override bool TileCollideStyle(ref int width, ref int height, ref bool fallThrough)
+        {
+            fallThrough = false;
+            return true;
         }
     }
 }

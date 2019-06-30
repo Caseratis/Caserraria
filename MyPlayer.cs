@@ -15,20 +15,21 @@ namespace Caserraria
         public bool Ornate = false;
         public bool MoonWalk = false;
         public bool Oof = false;
+        public bool hoardCalled = false;
 
         public override void ResetEffects()
         {
             Ornate = false;
             MoonWalk = false;
             Oof = false;
-        }
+    }
 
         public override void UpdateEquips(ref bool wallSpeedBuff, ref bool tileSpeedBuff, ref bool tileRangeBuff)
         {
             if (Ornate)
             {
                 MyPlayer p = player.GetModPlayer<MyPlayer>();
-                if (player.velocity.Y > 0 || player.velocity.Y < 0)
+                if (player.velocity.Y != 0)
                 {
                     if (player.velocity.X > 0)
                     {
@@ -47,11 +48,6 @@ namespace Caserraria
                 {
                     player.fullRotation = 0f;
                 }
-            }
-
-            else
-            {
-                player.fullRotation = 0f;
             }
         }
 
